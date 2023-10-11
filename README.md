@@ -26,11 +26,9 @@
 
  доступ к ресурсам:
  
-    localhost:8080        - джанго
-    
-    localhost:8080/admin  - админка джанго
-    
-    localhost:8081        - adminer
+    - localhost:8080        - джанго
+    - localhost:8080/admin  - админка джанго
+    - localhost:8081        - adminer
 
 Остановить проект:
 
