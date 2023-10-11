@@ -9,10 +9,12 @@ services:
       - POSTGRES_DB=postgres
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
+    container_name: db
 
   adminer:
     image: adminer
     restart: always
+    container_name: adminer
     ports:
       - "8001:8080"
     depends_on:
@@ -20,6 +22,7 @@ services:
 
   web:
     build: .
+    container_name: django
     command: python manage.py runserver 0.0.0.0:8000
     ports:
       - "8000:8000"
