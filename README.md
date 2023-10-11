@@ -1,5 +1,7 @@
 # Docker-Djando-Postgress
+
 1. Установить Doker и Docker-Compose
+
 2. развернуть проект:
 
  docker-compose up -d
@@ -19,11 +21,15 @@
  
  
  Что бы внести изменения в проект:
+ 
    docker-compose up -d --build web    
 
  доступ к ресурсам:
+ 
     localhost:8080        - джанго
+    
     localhost:8080/admin  - админка джанго
+    
     localhost:8081        - adminer
 
 Остановить проект:
