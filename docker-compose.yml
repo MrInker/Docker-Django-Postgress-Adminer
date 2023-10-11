@@ -10,6 +10,8 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
     container_name: db
+    volumes:
+      - pg-data:/var/lib/postgresql/data
 
   adminer:
     image: adminer
@@ -32,3 +34,6 @@ services:
       - POSTGRES_PASSWORD=postgres
     depends_on:
       - db
+      
+volumes:
+  pg-data:
