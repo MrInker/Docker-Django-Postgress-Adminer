@@ -7,9 +7,13 @@
 4. После того как проект развернется выполнить поочередно:
 
  docker exec -it django python manage.py migrate 
+ 
  docker exec -it django python manage.py makemigration
+ 
  docker exec -it django python manage.py createsuperuser
+ 
  docker exec -it django python manage.py migrate 
+ 
  docker exec -it django python manage.py makemigration 
 
  
@@ -21,5 +25,11 @@
   localhost:8080        - джанго
   localhost:8080/admin  - админка джанго
   localhost:8081        - adminer
-  
 
+Остановить проект:
+
+ docker-compose stop
+
+Остановить проеект с удалением всех контейнеров:
+  
+ docker-compose down
