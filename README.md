@@ -16,9 +16,12 @@
    
    docker exec -it django python manage.py migrate 
    
-   docker exec -it django python manage.py makemigrations
+   
+ 5. Перезапускаем сервис с джанго:
 
- 
+    docker-compose restart web
+
+     
  
  Что бы внести изменения в проект:
  
