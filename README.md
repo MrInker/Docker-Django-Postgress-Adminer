@@ -10,13 +10,13 @@
 
    docker exec -it django python manage.py migrate 
    
-   docker exec -it django python manage.py makemigration
+   docker exec -it django python manage.py makemigrations
    
    docker exec -it django python manage.py createsuperuser
    
    docker exec -it django python manage.py migrate 
    
-   docker exec -it django python manage.py makemigration 
+   docker exec -it django python manage.py makemigrations
 
  
  
