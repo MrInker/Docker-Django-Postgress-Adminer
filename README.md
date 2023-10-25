@@ -8,16 +8,16 @@
 
 4. После того как проект развернется выполнить поочередно:
 
-   docker exec -it django python manage.py migrate 
-   
    docker exec -it django python manage.py makemigrations
+
+   docker exec -it django python manage.py migrate 
    
    docker exec -it django python manage.py createsuperuser
    
    docker exec -it django python manage.py migrate 
    
    
- 5. Перезапускаем сервис с джанго:
+ 6. Перезапускаем сервис с джанго:
 
     docker-compose restart web
 
